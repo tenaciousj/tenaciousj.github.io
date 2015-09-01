@@ -1,0 +1,155 @@
+/*http://davidwalsh.name/css-cube*/
+  /*https://desandro.github.io/3dtransforms/docs/cube.html*/
+  @-webkit-keyframes cube-spin {
+      from { -webkit-transform: rotateY(0); }
+      to { -webkit-transform: rotateY(360deg); }
+    }
+
+    @-ms-keyframes cube-spin {
+      from { ms-transform: rotateY(0); }
+      to { ms-transform: rotateY(360deg); }
+    }
+
+    @keyframes cube-spin {
+      from { transform: rotateY(0); }
+      to { transform: rotateY(360deg); }
+    }
+
+    @-webkit-keyframes spin-vertical {
+      from { -webkit-transform: rotateX(0); }
+      to { -webkit-transform: rotateX(-360deg); }
+    }
+
+    @-ms-keyframes spin-vertical {
+      from { ms-transform: rotateX(0); }
+      to { ms-transform: rotateX(-360deg); }
+    }
+
+    @keyframes spin-vertical {
+      from { transform: rotateX(0); }
+      to { transform: rotateX(-360deg); }
+    }
+
+    
+    /*************** STANDARD CUBE ***************/
+    .cube-wrap {
+      -webkit-perspective: 800px;
+      -webkit-perspective-origin: 50% 100px;
+
+      -moz-perspective: 800px;
+      -moz-perspective-origin: 50% 100px;
+
+      -ms-perspective: 800px;
+      -ms-perspective-origin: 50% 100px;
+
+      perspective: 800px;
+      perspective-origin: 50% 100px;
+
+      text-align: center;
+      padding: 25px 0 90px 0;
+    }
+
+    .cube {
+      position: relative;
+      width: 150px;
+      margin-left:auto;
+      margin-right:auto;
+      
+      -webkit-transform-style: preserve-3d;
+      -webkit-animation: cube-spin 10s infinite linear;
+      
+      -moz-transform-style: preserve-3d;
+      -moz-animation: cube-spin 10s infinite linear;
+
+      -ms-transform-style: preserve-3d;
+      -ms-animation: cube-spin 10s infinite linear;
+
+      transform-style: preserve-3d;
+      animation: cube-spin 10s infinite linear;
+
+    }
+
+    .cube div {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background-color: white;
+      border: 2px solid black;
+      line-height: 65px;
+      background-size: 100%;
+    }
+  /*************** DEPTH CUBE ***************/
+    .depth div.back-pane {
+      -webkit-transform: translateZ(-75px) rotateY(180deg);
+      -moz-transform: translateZ(-75px) rotateY(180deg);
+      -ms-transform: translateZ(-75px) rotateY(180deg);
+
+      transform: translateZ(-75px) rotateY(180deg);
+
+      background-image: url(../images/lucent.jpeg);
+    }
+    .depth div.right-pane {
+      -webkit-transform:rotateY(-270deg) translateX(75px);
+      -webkit-transform-origin: top right;
+
+      -moz-transform:rotateY(-270deg) translateX(75px);
+      -moz-transform-origin: top right;
+
+      -ms-transform:rotateY(-270deg) translateX(75px);
+      -ms-transform-origin: top right;
+
+      transform:rotateY(-270deg) translateX(75px);
+      transform-origin: top right;
+
+      background-image: url(../images/hackillinois.jpeg);
+    }
+    .depth div.left-pane {
+      -webkit-transform:rotateY(270deg) translateX(-75px);
+      -webkit-transform-origin: center left;
+
+      -moz-transform:rotateY(270deg) translateX(-75px);
+      -moz-transform-origin: center left;
+
+      -ms-transform:rotateY(270deg) translateX(-75px);
+      -ms-transform-origin: center left;
+
+      transform:rotateY(270deg) translateX(-75px);
+      transform-origin: center left;
+
+      background-image: url(../images/iwh.jpeg);
+    }
+    .depth div.top-pane {
+      -webkit-transform:rotateX(-90deg) translateY(-75px);
+      -webkit-transform-origin: top center;
+
+      -moz-transform:rotateX(-90deg) translateY(-75px);
+      -moz-transform-origin: top center;
+
+      -ms-transform:rotateX(-90deg) translateY(-75px);
+      -ms-transform-origin: top center;
+
+      transform:rotateX(-90deg) translateY(-75px);
+      transform-origin: top center;
+    }
+    .depth div.bottom-pane {
+      -webkit-transform:rotateX(90deg) translateY(75px);
+      -webkit-transform-origin: bottom center;
+
+      -moz-transform:rotateX(90deg) translateY(75px);
+      -moz-transform-origin: bottom center;
+
+      -ms-transform:rotateX(90deg) translateY(75px);
+      -ms-transform-origin: bottom center;
+
+      transform:rotateX(90deg) translateY(75px);
+      transform-origin: bottom center;
+    }
+    .depth div.front-pane {
+      -webkit-transform: translateZ(75px);
+      -moz-transform: translateZ(75px);
+      -ms-transform: translateZ(75px);
+
+      transform: translateZ(75px);
+
+      background-image: url(../images/treehacks.jpeg);
+    }

@@ -1,0 +1,196 @@
+/*http://davidwalsh.name/demo/css-flip.php*/
+.flip-container {
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-ms-perspective: 1000;
+	perspective: 1000;
+
+	-ms-transform: perspective(1000px);
+	-moz-transform: perspective(1000px);
+		-moz-transform-style: preserve-3d; 
+		-ms-transform-style: preserve-3d; 
+
+}
+
+
+
+/* START: Accommodating for IE */
+.flip-container:hover .back, .flip-container.hover .back {
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+
+.flip-container:hover .front, .flip-container.hover .front {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+/* END: Accommodating for IE */
+
+.flip-container, .front, .back {
+	width: 500px; /*320*/
+	height: 400px; /*427*/
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	-ms-transition: 0.6s;
+
+	-moz-transition: 0.6s;
+	-moz-transform: perspective(1000px);
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: rotateY(0deg);
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+	-moz-transform: rotateY(0deg);
+
+	-o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+	-o-transform: rotateY(0deg);
+
+	-ms-transition: 0.6s;
+	-ms-transform-style: preserve-3d;
+	-ms-transform: rotateY(0deg);
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+
+.front {
+	-webkit-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	background: #333;
+	background-size: 100%;
+	z-index: 2;
+}
+
+.back {
+	background: #333;
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
+.back-logo {
+	position: absolute;
+	top: 40px;
+	left: 90px;
+	width: 160px;
+	height: 117px;
+	background: url(logo.png) 0 0 no-repeat;
+}
+
+.back-title {
+	font-weight: bold;
+	color: #00304a;
+	position: absolute;
+	top: 180px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+	font-family: Courier;
+	font-size: 22px;
+}
+
+.back p {
+	text-align: justify;
+	padding: 10px 10px;
+}
+/*.back p {
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: left;
+	padding: 10px 10px;
+}*/
+
+/* vertical */
+.vertical.flip-container {
+	position: relative;
+}
+
+.vertical .back {
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	-ms-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+.vertical.flip-container .flipper {
+	-webkit-transform-origin: 100% 213.5px;
+	-moz-transform-origin: 100% 213.5px;
+	-ms-transform-origin: 100% 213.5px;
+	transform-origin: 100% 213.5px;
+}
+
+/* START: Accommodating for IE */
+.vertical.flip-container:hover .back, .vertical.flip-container.hover .back {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.vertical.flip-container:hover .front, .vertical.flip-container.hover .front {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+/*.carousel-inner > .item,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}*/
+
+.front-card-title {
+	top: 45px;
+	font-size: 50px;
+	position: relative;
+	color: white;
+	background: rgba(51, 51, 51, 0.7);
+	border-radius: 10px;
+	padding: 10px;
+	text-shadow: none;
+	font-weight: bold;
+}
+.back-card-title{
+	font-size: 30px;
+	font-weight:bold;
+}
