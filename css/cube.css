@@ -42,6 +42,9 @@
       -ms-perspective: 800px;
       -ms-perspective-origin: 50% 100px;
 
+      -o-perspective: 800px;
+      -o-perspective-origin: 50% 100px; /*new*/
+
       perspective: 800px;
       perspective-origin: 50% 100px;
 
@@ -64,6 +67,9 @@
       -ms-transform-style: preserve-3d;
       -ms-animation: cube-spin 10s infinite linear;
 
+      -o-transform-style: preserve-3d;
+      -o-animation: cube-spin 10s infinite linear; /*new*/    
+
       transform-style: preserve-3d;
       animation: cube-spin 10s infinite linear;
 
@@ -83,6 +89,7 @@
       -webkit-transform: translateZ(-85px) rotateY(180deg);
       -moz-transform: translateZ(-85px) rotateY(180deg);
       -ms-transform: translateZ(-85px) rotateY(180deg);
+      -o-transform: translateZ(-85px) rotateY(180deg); /*new*/
 
       transform: translateZ(-85px) rotateY(180deg);
 
@@ -97,6 +104,9 @@
 
       -ms-transform:rotateY(-270deg) translateX(85px);
       -ms-transform-origin: top right;
+
+      -o-transform:rotateY(-270deg) translateX(85px);
+      -o-transform-origin: top right; /*new*/
 
       transform:rotateY(-270deg) translateX(85px);
       transform-origin: top right;
@@ -113,6 +123,9 @@
       -ms-transform:rotateY(270deg) translateX(-85px);
       -ms-transform-origin: center left;
 
+      -o-transform:rotateY(270deg) translateX(-85px);
+      -o-transform-origin: center left; /*new*/
+
       transform:rotateY(270deg) translateX(-85px);
       transform-origin: center left;
 
@@ -128,6 +141,9 @@
       -ms-transform:rotateX(-90deg) translateY(-85px);
       -ms-transform-origin: top center;
 
+      -o-transform:rotateX(-90deg) translateY(-85px);
+      -o-transform-origin: top center; /*new*/
+
       transform:rotateX(-90deg) translateY(-85px);
       transform-origin: top center;
     }
@@ -141,6 +157,9 @@
       -ms-transform:rotateX(90deg) translateY(85px);
       -ms-transform-origin: bottom center;
 
+      -o-transform:rotateX(90deg) translateY(85px);
+      -o-transform-origin: bottom center; /*new*/
+
       transform:rotateX(90deg) translateY(85px);
       transform-origin: bottom center;
     }
@@ -148,6 +167,7 @@
       -webkit-transform: translateZ(85px);
       -moz-transform: translateZ(85px);
       -ms-transform: translateZ(85px);
+      -o-transform: translateZ(85px); /*new*/
 
       transform: translateZ(85px);
 
