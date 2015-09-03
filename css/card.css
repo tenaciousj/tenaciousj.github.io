@@ -176,7 +176,7 @@
 		}
 
 		.back p {
-			font-size:85%;
+			font-size:75%;
 		}
 		.back-card-title{
 			font-size: 80px;
@@ -186,8 +186,8 @@
  	@media all and (max-width: 349px) and (min-width: 50px){
 
  		.flip-container, .front, .back {
-			width: 200px;
-			height: 200px;
+			width: 220px;
+			height: 220px;
 		}
 
 		.front-card-title {
@@ -196,10 +196,10 @@
 		}
 
 		.back p {
-			font-size:85%;
+			font-size:50%;
 		}
 		.back-card-title{
-			font-size: 80px;
+			margin: 0;
 		}
 
  	}
