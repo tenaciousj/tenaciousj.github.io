@@ -196,7 +196,7 @@
     }
     @media all and (max-width: 350px) and (min-width: 50px){
       .description-circle{
-        visibility: hidden;
+        display: none;
       }
       .carousel-container {
         width: 240px;
