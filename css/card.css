@@ -12,8 +12,6 @@
 
 }
 
-
-
 /* START: Accommodating for IE */
 .flip-container:hover .back, .flip-container.hover .back {
 	-webkit-transform: rotateY(0deg);
@@ -130,13 +128,6 @@
 	text-align: justify;
 	padding: 10px 10px;
 }
-/*.back p {
-	position: absolute;
-	left: 0;
-	right: 0;
-	text-align: left;
-	padding: 10px 10px;
-}*/
 
 /* vertical */
 .vertical.flip-container {
@@ -172,12 +163,6 @@
     -o-transform: rotateX(180deg);
     transform: rotateX(180deg);
 }
-/*.carousel-inner > .item,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 70%;
-  margin: auto;
-}*/
 
 .front-card-title {
 	top: 45px;

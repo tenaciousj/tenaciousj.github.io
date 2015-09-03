@@ -35,13 +35,11 @@
       display: block;
       position: absolute;
       width: 476px;
-      height: 351px;/*351*/
+      height: 351px;
       left: 10px;
       top: 10px;
       border: 2px solid black;
       line-height: 20px;
-      /*font-size: 80px;*/
-      /*font-weight: bold;*/
       background: #333333;
       color: white;
       font-family: "Helvetica Neue";
@@ -110,4 +108,128 @@
       border: 1px solid black;
       float: right;
       margin-right: 20px;
+    }
+
+
+
+    @media all and (max-width: 650px) and (min-width: 50px){
+      .description-circle{
+        visibility: hidden;
+      }
+      .carousel-container {
+        width: 280px;
+        height: 175px;
+        margin-bottom: 110px;
+
+        -webkit-perspective: 800px;
+           -moz-perspective: 800px;
+            -ms-perspective: 800px;
+             -o-perspective: 800px;
+                perspective: 800px;
+      }
+
+      #carousel {/*
+        width: 100%;
+        height: 100%;
+        position: absolute;*/
+        -webkit-transform: translateZ( -380px );
+           -moz-transform: translateZ( -380px );
+            -ms-transform: translateZ( -380px );
+             -o-transform: translateZ( -380px );
+                transform: translateZ( -380px );/*
+        -webkit-transform-style: preserve-3d;
+           -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+             -o-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        -webkit-transition: -webkit-transform 1s;
+           -moz-transition: -moz-transform 1s;
+            -ms-transition: transform 1s;
+             -o-transition: -o-transform 1s;
+                transition: transform 1s;*/
+      }
+
+      #carousel figure {/*
+        display: block;
+        position: absolute;*/
+
+        width: 276px;
+        height: 251px;
+        left: 5px;
+        top: 5px;
+        /*
+        left: 10px;
+        top: 10px;
+        border: 2px solid black;
+        line-height: 20px;
+        background: #333333;
+        color: white;
+        font-family: "Helvetica Neue";
+        text-shadow: none;
+        background-size: 100%;*/
+
+      }
+
+      #carousel figure p {
+        top:0px;
+        font-size:0.6em;
+      }
+
+      #carousel figure p span {
+        font-size: 1em;
+        font-weight: bold;
+        margin-right: 10px;
+        text-align: left;
+      }
+
+      #carousel figure:nth-child(1) {
+        -webkit-transform: rotateY(   0deg ) translateZ( 380px );
+           -moz-transform: rotateY(   0deg ) translateZ( 380px );
+            -ms-transform: rotateY(   0deg ) translateZ( 380px );
+             -o-transform: rotateY(   0deg ) translateZ( 380px );
+                transform: rotateY(   0deg ) translateZ( 380px );
+      }
+      #carousel figure:nth-child(2) {
+        -webkit-transform: rotateY(  72deg ) translateZ( 380px );
+           -moz-transform: rotateY(  72deg ) translateZ( 380px );
+            -ms-transform: rotateY(  72deg ) translateZ( 380px );
+             -o-transform: rotateY(  72deg ) translateZ( 380px );
+                transform: rotateY(  72deg ) translateZ( 380px );
+      }
+      #carousel figure:nth-child(3) {
+        -webkit-transform: rotateY(  144deg ) translateZ( 380px );
+           -moz-transform: rotateY(  144deg ) translateZ( 380px );
+            -ms-transform: rotateY(  144deg ) translateZ( 380px );
+             -o-transform: rotateY(  144deg ) translateZ( 380px );
+                transform: rotateY(  144deg ) translateZ( 380px );
+      }
+      #carousel figure:nth-child(4) {
+        -webkit-transform: rotateY( 216deg ) translateZ( 380px );
+           -moz-transform: rotateY( 216deg ) translateZ( 380px );
+            -ms-transform: rotateY( 216deg ) translateZ( 380px );
+             -o-transform: rotateY( 216deg ) translateZ( 380px );
+                transform: rotateY( 216deg ) translateZ( 380px );
+      }
+      #carousel figure:nth-child(5) {
+        -webkit-transform: rotateY( 288deg ) translateZ( 380px );
+           -moz-transform: rotateY( 288deg ) translateZ( 380px );
+            -ms-transform: rotateY( 288deg ) translateZ( 380px );
+             -o-transform: rotateY( 288deg ) translateZ( 380px );
+                transform: rotateY( 288deg ) translateZ( 380px );
+      }
+
+      .description-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;/*
+        background-color: #333;
+        background-size: 100%;
+        box-shadow: 5px 5px 3px black;
+        border: 1px solid black;
+        float: right;
+        margin-right: 20px;*/
+      }
+
+
+    
     }
