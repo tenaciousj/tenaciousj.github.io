@@ -113,14 +113,7 @@ body {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 768px) {
-  /*.masthead-brand {
-    float: left;
-  }*/
-  .masthead-nav {
-    float: left; /*right*/
-  }
-}
+
 
 
 /*
@@ -149,7 +142,8 @@ body {
 h1{
   font-family: Raleway;
   letter-spacing: 5px;
-  font-size: 45px;
+  /*font-size: 3vw;*/
+
   color: white;
 }
 
@@ -179,6 +173,7 @@ h1{
     position: fixed;
     bottom: 0;
   }
+
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -189,6 +184,9 @@ h1{
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+  .masthead-nav {
+    float: left; /*right*/
+  }
 }
 
 @media (min-width: 992px) {
@@ -196,5 +194,46 @@ h1{
   .mastfoot,
   .cover-container {
     width: 700px;
+  }
+
+}
+
+@media all and (min-width: 1500px) {
+  h1{
+    font-size: 8em;
+  }
+  .circle-portrait{
+    width: 35vw;
+    height: 35vw;
+    border-radius: 17.5vw;
+  }
+  .masthead-nav > li > a {
+    font-size: 3em;
+  }
+}
+
+/*@media all and (max-width: 959px) and (min-width: 600px) {
+  h1{
+    font-size: 7vw;
+  }
+  .circle-portrait{
+    width: 35vw;
+    height: 35vw;
+    border-radius: 17.5vw;
+  }
+  .masthead-nav > li > a {
+    font-size: 2.1em;
+  }
+}*/
+
+@media all and (max-width: 599px) and (min-width: 50px){
+  h1{
+    font-size: 6vw;
+  }
+  .circle-portrait{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 15vw;
+
   }
 }
