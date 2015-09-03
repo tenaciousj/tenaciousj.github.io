@@ -148,9 +148,12 @@ h1{
 }
 
 .circle-portrait {
-  width: 150px;
+  /*width: 150px;
   height: 150px;
-  border-radius: 75px;
+  border-radius: 75px;*/
+  width: 12vw;
+  height: 12vw;
+  border-radius:6vw;
   background-color: #333;
   background-size: 100%;
   box-shadow: 5px 5px 3px black;
@@ -212,19 +215,15 @@ h1{
   }
 }
 
-/*@media all and (max-width: 959px) and (min-width: 600px) {
-  h1{
-    font-size: 7vw;
-  }
+@media all and (max-width: 870px) and (min-width: 600px){
   .circle-portrait{
-    width: 35vw;
-    height: 35vw;
-    border-radius: 17.5vw;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10vw;
+
   }
-  .masthead-nav > li > a {
-    font-size: 2.1em;
-  }
-}*/
+}
+
 
 @media all and (max-width: 599px) and (min-width: 50px){
   h1{
