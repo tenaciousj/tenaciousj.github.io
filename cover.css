@@ -201,19 +201,6 @@ h1{
 
 }
 
-@media all and (min-width: 1500px) {
-  h1{
-    font-size: 8em;
-  }
-  .circle-portrait{
-    width: 35vw;
-    height: 35vw;
-    border-radius: 17.5vw;
-  }
-  .masthead-nav > li > a {
-    font-size: 3em;
-  }
-}
 
 @media all and (max-width: 870px) and (min-width: 600px){
   .circle-portrait{
