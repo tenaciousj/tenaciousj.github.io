@@ -14,7 +14,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="cover.css" rel="stylesheet">
+    <link href="general.css" rel="stylesheet">
     <link href="css/cube.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -23,54 +23,48 @@
   </head>
 
   <body>
-
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About Me</a></li>
-                  <li><a href="experience.html">Experience</a></li>
-                  <li><a href="projects.html">Projects</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover animated zoomIn">
-            <div class="circle-portrait" style="background-image:url(images/self-portrait.jpeg)"></div>
-            <!-- <p class="lead" style="font-family: Raleway; padding-top:10px">Hello, I am</p> -->
-            <h1 class="cover-heading">Jeanette Pranin</h1>
-            <div class="cube-wrap">
-              <div class="cube depth">
-                <div class="front-pane">Avid Hacker</div>
-                <div class="back-pane">Software Developer</div>
-                <div class="top-pane">Secret!</div>
-                <div class="bottom-pane">Secret!</div>
-                <div class="left-pane">Front End Developer</div>
-                <div class="right-pane">App Enthusiast</div>
-              </div>
-            </div>
-            
-          </div>
-
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="test-index.html">Jeanette Pranin</a>
         </div>
 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
+
+    <div class="inner cover animated zoomIn">
+      <div class="circle-portrait" style="background-image:url(images/self-portrait.jpeg)"></div>
+      <h1>Jeanette Pranin</h1>
+      <div class="cube-wrap">
+        <div class="cube depth">
+          <div class="front-pane">Avid Hacker</div>
+          <div class="back-pane">Software Developer</div>
+          <div class="top-pane">Secret!</div>
+          <div class="bottom-pane">Secret!</div>
+          <div class="left-pane">Front End Developer</div>
+          <div class="right-pane">App Enthusiast</div>
+        </div>
+      </div>
+      
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>

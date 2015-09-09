@@ -89,11 +89,11 @@
 	-webkit-transform: rotateY(0deg);
 	-ms-transform: rotateY(0deg);
 	background: #333;
-	/*background-size: 100%;*/
 	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  	-moz-background-size: cover;
+  	-ms-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 	z-index: 2;
 }
 
