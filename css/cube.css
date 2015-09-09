@@ -62,19 +62,19 @@
       margin-right:auto;
       
       -webkit-transform-style: preserve-3d;
-      -webkit-animation: cube-spin 10s infinite linear;
+      -webkit-animation: cube-spin 12s infinite linear;
       
       -moz-transform-style: preserve-3d;
-      -moz-animation: cube-spin 10s infinite linear;
+      -moz-animation: cube-spin 12s infinite linear;
 
       -ms-transform-style: preserve-3d;
-      -ms-animation: cube-spin 10s infinite linear;
+      -ms-animation: cube-spin 12s infinite linear;
 
       -o-transform-style: preserve-3d;
-      -o-animation: cube-spin 10s infinite linear; /*new*/    
+      -o-animation: cube-spin 12s infinite linear; /*new*/    
 
       transform-style: preserve-3d;
-      animation: cube-spin 10s infinite linear;
+      animation: cube-spin 12s infinite linear;
 
     }
 
@@ -83,7 +83,7 @@
       width: 170px;
       height: 170px;
       background-color: white;
-      border: 2px solid black;
+      /*border: 2px solid black;*/
       line-height: 70px;
       background-size: 100%;
     }
