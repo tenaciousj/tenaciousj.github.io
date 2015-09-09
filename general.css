@@ -1,5 +1,5 @@
 body {
-  background: url(images/chicago.jpeg) no-repeat center center fixed; 
+  background: url(images/cherry-blossom.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -7,6 +7,12 @@ body {
   background-size: cover;
   
   color:white;
+  font-family: Avenir;
+}
+
+@font-face {
+    font-family: existence;
+    src: url(fonts/Existence-Light.otf);
 }
 
 a {
@@ -16,6 +22,10 @@ a {
 
 a:hover{
   color:gray;
+}
+
+.navbar {
+  font-family: existence;
 }
 
 .navbar-brand > img {
@@ -131,7 +141,7 @@ a:hover{
     text-align:center;
     color: white;
     text-shadow: 0 2px 3px rgba(0,0,0,.5);
-    font-family: Raleway;
+    font-family: existence;
     letter-spacing: 0.5vw;
     font-size: 3vw;
   }
