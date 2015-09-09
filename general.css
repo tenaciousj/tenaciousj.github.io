@@ -48,18 +48,18 @@ a:hover{
 }
 /* link */
 .navbar-default .navbar-nav > li > a {
-    color: #CCCCCC; /* for IE */
-    color: rgba(204,204,204,.75);
+    color: white; /* for IE */
+    color: rgba(255,255,255,.8);
     border-bottom: 2px solid transparent;
     font-weight: bold;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #CCCCCC; /* for IE */
-    color: rgba(204,204,204,.75);
-    border-bottom-color: #CCCCCC;
-    border-bottom-color: rgba(204,204,204,.75);
+    color: white;
+    color: rgba(255,255,255,.8);
+    border-bottom-color: white;
+    border-bottom-color: rgba(255,255,255,.8);
 }
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
