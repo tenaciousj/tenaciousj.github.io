@@ -21,7 +21,7 @@
 
   </head>
   <style>
-  #about-me{
+  .about-me{
     text-align:justify;
     font-size: 1.5em;
     background-color: rgba(51,51,51,0.7);
@@ -30,9 +30,22 @@
     color:white;
   }
   @media all and (max-height: 700px) and (max-width: 900px) {
-    #about-me{
+    .about-me{
       font-size: 1.2em;
     }
+  }
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
 
@@ -65,10 +78,24 @@
     </nav>
 
     <div class="circle-portrait animated rotateIn" style="background-image: url(images/treehacks-portrait.jpeg);"></div>
-      <h1>About Me</h1>
-        <center><div style="width:80%">
-        <p id="about-me">Hello there! My name is Jeanette and I am an aspiring Software Engineer, Hackathon-goer, and Front-End Developer. I'm originally from Las Vegas, and I am currently in my junior year at Northwestern University (Go 'Cats!) studying Computer Science in Chicago. My favorite languages are <span style="color:#D4C082; text-shadow: 0 1px 3px rgba(0,0,0,.7); font-weight:bold;">Python, C/#/++, Java, HTML, CSS, and JavaScript</span>. In my spare time, I love to dance and choreograph for <a href="https://www.youtube.com/user/NUFusionDanceCo"><strong>Fusion Dance Company</strong></a>, NU's premier hip hop group, as well as enjoy photography and study Japanese. I've also discovered a love for CSS3 effects, as seen throughout my site. Please reach out at my <strong><a href="contact.html">contact page</a></strong> so I can get to know you better!</p>
-        </div></center>
+    <h1>About Me</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <center><div style="width:80%">
+          <p class="about-me">Hello there! My name is Jeanette and I am an aspiring Software Engineer, Hackathon-goer, and Front-End Developer. I'm originally from Las Vegas, and I am currently in my junior year at Northwestern University (Go 'Cats!) studying Computer Science in Chicago. My favorite languages are <span style="color:#D4C082; text-shadow: 0 1px 3px rgba(0,0,0,.7); font-weight:bold;">Python, C/#/++, Java, HTML, CSS, and JavaScript</span>. When I'm not coding, I love to dance and choreograph for <a href="https://www.youtube.com/user/NUFusionDanceCo"><strong>Fusion Dance Company</strong></a>, Northwestern's premier hip-hop dance group. I love to dance because just like in Computer Science, there is no one way to create something that anyone can enjoy. If you'd like to see some of my work, please check out some of the links below.</p>
+          <p class="about-me" style="text-align:center">Enough about me, how about you? Please reach out at my <strong><a href="contact.html">contact page</a></strong> so I can get to know you better!</p>
+          </div></center>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"><div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/o9azKzVcnFA" frameborder="0" allowfullscreen></iframe></div></div>
+        <div class="col-md-6"><div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/Dv8sLAqg6Uw" frameborder="0" allowfullscreen></iframe></div></div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"><div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/V71iTxN_OyY" frameborder="0" allowfullscreen></iframe></div></div>
+        <div class="col-md-6"><div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/Ad45G83EJE8" frameborder="0" allowfullscreen></iframe></div></div>
+      </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
