@@ -24,12 +24,13 @@
   .about-me{
     text-align:justify;
     font-size: 1.3em;
-    background-color: rgba(51,51,51,0.7);
+    background-color: rgba(51,51,51,0.9);
     text-shadow:none;
     border-radius: 10px;
     padding: 10px;
     color:white;
     font-family: Avenir;
+    text-align:justify;
   }
   @media all and (max-height: 700px) and (max-width: 900px) {
     .about-me{
@@ -49,12 +50,15 @@
     width: 100%;
     height: 100%;
   }
+  .border-right{
+    border-right: 2px solid white;
+  }
 
 
   </style>
 
   <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default animated fadeIn">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -79,15 +83,34 @@
       </div>
     </nav>
 
-    <div class="circle-portrait animated rotateIn" style="background-image: url(images/treehacks-portrait.jpeg);"></div>
+    <!-- <div class="circle-portrait animated rotateIn" style="background-image: url(images/treehacks-portrait.jpeg);"></div> -->
     <h1>ABOUT ME</h1>
-    <div class="container">
+    <div class="container animated fadeInUp" style="width:85%">
       <div class="row">
-        <div class="col-md-12">
-          <p class="about-me">Hello there! My name is Jeanette and I am an aspiring Software Engineer, Hackathon-goer, and Front-End Developer. I am currently in my junior year at Northwestern University (Go 'Cats!) studying Computer Science. My favorite languages are <span style="color:#D4C082; text-shadow: 0 1px 3px rgba(0,0,0,.7); font-weight:bold;">Python, C/#/++, Java, HTML, CSS, and JavaScript</span>. When I'm not coding, I love to dance and choreograph for <a href="https://www.youtube.com/user/NUFusionDanceCo"><strong>Fusion Dance Company</strong></a>, Northwestern's premier hip-hop dance group. I love to dance because just like in Computer Science, there is no one way to create something that anyone can enjoy. If you'd like to see some of my work, please check out some of the links below.</p>
-          <p class="about-me" style="text-align:center">Enough about me, how about you? Please reach out at my <strong><a href="contact.html">contact page</a></strong> so I can get to know you better!</p>
+        <div class="col-md-12 about-me">
+          <p>Hello there, my name is Jeanette! I am a junior at Northwestern University studying Computer Science and I am a Hackathon-goer, Front-End Developer, and aspiring Software Engineer. Here are some important stats about me. </p>
+          <p><center><em>Languages</em></center></p>
+          <div class="row">
+            <div class="col-xs-4 col-sm-2 border-right"><center><p>Python</p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></center></div>
+            <div class="col-xs-4 col-sm-2 border-right"><center><p>C#</p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></center></div>
+            <div class="col-xs-4 col-sm-2 border-right"><center><p>HTML/CSS</p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></center></div>
+            <div class="col-xs-4 col-sm-2 border-right"><center><p>JavaScript</p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></center></div>
+            <div class="col-xs-4 col-sm-2 border-right"><center><p>Java</p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></center></div>
+            <div class="col-xs-4 col-sm-2"><center><p>C and C++</p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></center></div>
+          </div>
+          <p><center><em>Awards</em></center></p>
+          <div class="row">
+            <div class="col-xs-6 col-sm-3 border-right"><center><p>Best Local Impact &amp; Government Hack</p><p><strong>PennApps XII</strong></p></div>
+            <div class="col-xs-6 col-sm-3 border-right"><center><p>Software Inclusion and Diversity Scholarship</p><p><strong>Apple</strong></p></div>
+            <div class="col-xs-6 col-sm-3 border-right"><center><p>1st Place @ International Women's Hackathon</p><p><strong>Microsoft &amp; NU</strong></p></div>
+            <div class="col-xs-6 col-sm-3"><center><p>Aspirations in Computing Award</p><p><strong>National Center for Women &amp; Information Technology</strong></p></div>
+          </div>
+          <p>When I'm not coding, I love to dance and choreograph for <a href="https://www.youtube.com/user/NUFusionDanceCo"><strong>Fusion Dance Company</strong></a>, Northwestern's premier hip-hop dance group. You can check out some of my choreographed routines down below.</p>
+          <!-- <p class="about-me">Hello there! My name is Jeanette and I am an aspiring Software Engineer, Hackathon-goer, and Front-End Developer. I am currently in my junior year at Northwestern University (Go 'Cats!) studying Computer Science. My favorite languages are <span style="color:#D4C082; text-shadow: 0 1px 3px rgba(0,0,0,.7); font-weight:bold;">Python, C/#/++, Java, HTML, CSS, and JavaScript</span>. When I'm not coding, I love to dance and choreograph for <a href="https://www.youtube.com/user/NUFusionDanceCo"><strong>Fusion Dance Company</strong></a>, Northwestern's premier hip-hop dance group. I love to dance because just like in Computer Science, there is no one way to create something that anyone can enjoy. If you'd like to see some of my work, please check out some of the links below.</p>
+          <p class="about-me" style="text-align:center">Enough about me, how about you? Please reach out at my <strong><a href="contact.html">contact page</a></strong> so I can get to know you better!</p> -->
         </div>
       </div>
+      <p></p>
       <div class="row">
         <div class="col-md-6"><div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/o9azKzVcnFA" frameborder="0" allowfullscreen></iframe></div></div>
         <div class="col-md-6"><div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/Dv8sLAqg6Uw" frameborder="0" allowfullscreen></iframe></div></div>
@@ -97,6 +120,8 @@
         <div class="col-md-6"><div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/Ad45G83EJE8" frameborder="0" allowfullscreen></iframe></div></div>
       </div>
     </div>
+    <p></p>
+    <center><p class="about-me" style="text-align:center; width: 85%">Enough about me, how about you? Please reach out at my <strong><a href="contact.html">contact page</a></strong> so I can get to know you better!</p></center>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
