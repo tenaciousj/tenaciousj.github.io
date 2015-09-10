@@ -14,6 +14,10 @@ body {
     font-family: existence;
     src: url(fonts/Existence-Light.otf);
 }
+@font-face {
+    font-family: accent;
+    src: url(fonts/accent.ttf);
+}
 
 a {
   text-decoration: none;
