@@ -1,0 +1,454 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: existence;
+    src: url(../fonts/Existence-Light.otf);
+}
+
+body {
+    font-family: existence,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+p {
+    font-size: 1.23em;
+}
+
+
+
+
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.circle-portrait {
+    width: 12vw;
+    height: 12vw;
+    border-radius:6vw;
+    background-color: #333;
+    background-size: 100%;
+    box-shadow: 0px 2px 5px black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.navbar-brand{
+    text-transform: uppercase;
+}
+
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    /*margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;*/
+    text-shadow: 0 2px 3px rgba(0,0,0,.5);
+    font-family: existence;
+    letter-spacing: 0.5vw;
+    font-size: 4.5vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.text-vertical-center h3 {
+    text-shadow: 0 2px 3px rgba(0,0,0,.5);
+    font-family: existence;
+    font-size: 2vw;
+    /*font-weight: 700;*/
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color:white;
+    background: url(../images/chicago.jpeg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/*
+.border-right-show, .border-right{
+    border-right: 2px solid black;
+  }
+  @media all and (max-width:770px){
+    .border-right{
+      border:none;
+    }
+  }*/
+
+/* About */
+
+.about {
+    padding: 1vw;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Experience */
+
+.table-display {
+    display: table;
+}
+
+.experience {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../images/pennapps_action.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position: center;
+    /*-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    
+    width:100%;
+    max-width: 500px;
+    height: 300px;
+    text-align: left;
+    /*display: table;*/
+
+    font-size:3em;
+    /*color:transparent;*/
+}
+
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
+
+
+  /* iPhone 4 and smaller */
+  /* Portrait */
+  @media all and (max-width: 374px) and (max-height: 567px) {
+    .circle-portrait {
+      width: 35vw;
+      height: 35vw;
+      border-radius: 17.5vw;
+    }
+    .text-vertical-center h1 {
+      font-size: 8.5vw;
+    }
+    .text-vertical-center h3 {
+      font-size: 5vw;
+    }
+  }
+  /* Landscape */
+  @media all and (max-height: 374px) and (max-width: 567px) {
+    .circle-portrait {
+      width: 30vh;
+      height: 30vh;
+      border-radius: 15vh;
+    }
+    .text-vertical-center h1 {
+      font-size: 8vh;
+    }
+    .text-vertical-center h3 {
+      font-size: 5vh;
+    }
+  }
+  /* iPhone 5 and smaller */
+  /* Portrait */
+  @media all and (max-width: 413px) and (max-height: 735px) {
+    .circle-portrait {
+      width: 40vw;
+      height: 40vw;
+      border-radius: 20vw;
+    }
+    .text-vertical-center h1 {
+      font-size: 9vw;
+    }
+    .text-vertical-center h3 {
+      font-size: 5vw;
+    }
+  }
+  /* Landscape */
+  @media all and (max-height: 413px) and (max-width: 735px) {
+    .circle-portrait {
+      width: 30vh;
+      height: 30vh;
+      border-radius: 15vh;
+    }
+    .text-vertical-center h1 {
+      font-size: 8vh;
+    }
+    .text-vertical-center h3 {
+      font-size: 5vh;
+    }
+  }
+  /* iPhone 6+ smaller */
+  /* Portrait */
+  @media all and (max-width: 500px) and (max-height: 900px) {
+    .circle-portrait {
+      width: 40vw;
+      height: 40vw;
+      border-radius: 20vw;
+    }
+    .text-vertical-center h1 {
+      font-size: 9vw;
+    }
+  }
+  /* Landscape */
+  @media all and (max-height: 500px) and (max-width: 900px) {
+    .circle-portrait {
+      width: 30vh;
+      height: 30vh;
+      border-radius: 15vh;
+    }
+    .text-vertical-center h1 {
+      font-size: 8vh;
+    }
+  }
+  @media all and (min-width: 500px) and (max-width: 1300px) {
+    .circle-portrait {
+      width: 30vh;
+      height: 30vh;
+      border-radius: 15vh;
+    }
+    .text-vertical-center h1 {
+      font-size: 8vh;
+    }
+  }
+
+.glyphicon{
+            font-size: 2em;
+            color: white;
+        }
+
+        .circle-icon{
+            width: 45px;
+            height:45px;
+            border-radius:5px;
+            background-color: white;
+            background-size: 100%;
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            transition-property: background, border-radius;
+            transition-duration: 0.4s;
+            transition-timing-function: linear;
+          }
+          .circle-icon:hover{
+            border-radius:50%;
+            background-image: none;
+            background-color: #337AB7;
+          }
+          .lang-icon{
+            width:100px;
+            height:100px;
+            border-radius:50px;
+            display: table;
+            margin:5px;
+          }
+          @media all and (max-width: 350px) {
+            .lang-icon{
+              width:80px;
+              height:80px;
+              border-radius:40px;
+            }
+
+          }
+
+
